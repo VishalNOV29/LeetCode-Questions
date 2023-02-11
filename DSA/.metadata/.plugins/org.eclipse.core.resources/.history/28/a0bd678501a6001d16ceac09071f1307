@@ -1,0 +1,12 @@
+package com.dsa;
+
+// Implementation of Deque...
+
+public class JavaDeque {
+	public static void main(String[] args) {
+		System.out.println("Code is running well");
+		
+		JavaDeque<Integer> queue=new JavaDeque<Integer>();
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.dsa;
+
+import java.util.Arrays;
+
+public class MinMax {
+	public static int[] minMax(int[] arr) {
+		int[] res=new int[2];
+		int min=Integer.MAX_VALUE;
+		int max=Integer.MIN_VALUE;
+		for (int i=0;i<arr.length;i++) {
+			if (arr[i]<min) {
+				System.out.println("value is smaller than min");
+				min=arr[i];
+			}else {
+				System.out.println("Value is larget than max");
+				max=arr[i];
+			}
+			System.out.println(min+", "+max);
+		}
+		res[0]=min;
+		res[1]=max;
+		
+		return res;
+	}
+
+	public static void main(String[] args) {
+		int[] arr= {1,2,3,4,5,6,7,0,-1,20};
+		int[] res=minMax(arr);
+		System.out.println(Arrays.toString(res));
+		System.out.println("Code is running");
+	}
+}

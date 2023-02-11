@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.dsa.Deque&apos; to &apos;JavaDeque&apos;&#x0D;&#x0A;- Original project: &apos;DSA_ALGO&apos;&#x0D;&#x0A;- Original element: &apos;com.dsa.Deque&apos;&#x0D;&#x0A;- Renamed element: &apos;com.dsa.JavaDeque&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Deque&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.dsa{Deque.java[Deque" matchStrategy="1" name="JavaDeque" qualified="false" references="true" similarDeclarations="false" stamp="1675675066069" textual="false" version="1.0"/>
+</session>

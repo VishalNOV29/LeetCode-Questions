@@ -1,0 +1,40 @@
+package com.ques;
+
+public class Solution540 {
+	
+	public static int binarySearch(int arr[], int first, int last){
+		int mid = first + (last - first)/2;
+		if (last!=first){
+			
+			int pair_index;
+			
+			if (arr[mid]==arr[mid+1]) {
+				pair_index=mid+1;
+			}else if (arr[mid]==arr[mid-1]) {
+				pair_index=mid-1;
+			}else {
+				return mid;
+			}
+			
+			if (pair_index%2==0){
+			return binarySearch(arr, first, mid-1);//search in left subarray
+            }else{
+			return binarySearch(arr, mid+1, last);//search in right subarray
+            }
+		}
+		return mid;
+	}
+	
+	public static int singleNonDuplicate(int[] nums) {
+		int first=0;
+		int last=nums.length-1;
+		int res=binarySearch(nums,first,last);
+		return nums[res];
+		
+	 }
+	public static void main(String[] args) {
+		System.out.println("Code is running");
+		int[] arr= {1,1,2,2,3,3,4,4,5,5,6};
+		System.out.println(singleNonDuplicate(arr));
+	}
+}

@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\visha\OneDrive\Desktop\leetcode\DSA\.metadata\.plugins\org.eclipse.jdt.core
+2242675872.index
+1865797976.index
+2621019146.index
+2010876528.index
+2964444701.index

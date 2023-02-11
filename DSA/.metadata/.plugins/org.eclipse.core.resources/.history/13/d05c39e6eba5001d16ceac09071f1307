@@ -1,0 +1,23 @@
+package com.ques;
+import java.util.Collections;
+import java.util.PriorityQueue;
+public class Solution239 {
+	
+	 public static void maxSlidingWindow(int[] nums, int k) {
+		 PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>( Collections.reverseOrder());
+		 int i=0;
+		 while (i<k) {
+			 maxHeap.add(nums[i]);
+		 }
+		 System.out.println(maxHeap);
+		       
+	 }
+	public static void main(String[] args) {
+		
+		System.out.println("Code is running");
+		int[] nums = [1,3,-1,-3,5,3,6,7];
+		int k = 3;
+		maxSlidingWindow(nums,k);
+		
+	}
+}
